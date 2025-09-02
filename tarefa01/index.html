@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Online de Programação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header-fixo">
+        <div class="logo-area">
+            <span class="logo-icon">💻</span>
+            <span class="logo-text">Escola Online</span>
+        </div>
+        <nav aria-label="Menu principal">
+            <ul class="menu-principal">
+                <li><button class="btn" id="btn-cursos">📚 <span>Listar Cursos</span></button></li>
+                <li><button class="btn" id="btn-idade">🧑‍🎓 <span>Verificar Idade</span></button></li>
+                <li><button class="btn" id="btn-cadastro">📝 <span>Cadastro de Aluno</span></button></li>
+                <li><button class="btn" id="btn-listar-alunos">👥 <span>Ver Alunos</span></button></li>
+            </ul>
+        </nav>
+        <h1>Escola Online de Programação</h1>
+        <p>Aprenda a programar do zero ao avançado!</p>
+    </header>
+    <main class="conteudo">
+            <section class="boas-vindas">
+                <h2>Bem-vindo!</h2>
+                <p class="intro">Aqui você aprende, pratica e se conecta com o futuro da tecnologia.<br>Escolha uma tarefa para começar:</p>
+            </section>
+        <section id="cursos-internet" style="margin-top:40px;">
+            <h3>Tecnologia em Sistemas para Internet</h3>
+            <div class="materia destaque">
+                <h4>O que é?</h4>
+                <p>É um curso de graduação (tecnólogo) focado no desenvolvimento de soluções para a web. O aluno aprende a criar sites, aplicações web, sistemas de e-commerce e outras plataformas online.</p>
+                <h4>O que se aprende?</h4>
+                <ul>
+                    <li>Programação front-end (HTML, CSS, JavaScript)</li>
+                    <li>Back-end (PHP, Java, Python, Node.js)</li>
+                    <li>Bancos de dados, segurança da informação, redes e gestão de projetos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cursos-linguagens" style="margin-top:40px;">
+            <h3>Cursos por Linguagem de Programação</h3>
+            <div class="materias-grid">
+                <div class="materia">
+                    <h4>Python</h4>
+                    <p>Sintaxe simples e grande aplicabilidade em ciência de dados, IA e web (Django, Flask). Plataformas: Alura, Udemy, Coursera.</p>
+                </div>
+                <div class="materia">
+                    <h4>JavaScript</h4>
+                    <p>Essencial para web, tanto front-end (React, Angular, Vue) quanto back-end (Node.js). Alta demanda no mercado.</p>
+                </div>
+                <div class="materia">
+                    <h4>Java</h4>
+                    <p>Robusta, usada em sistemas corporativos, Android e grandes aplicações. Aborda fundamentos e frameworks como Spring.</p>
+                </div>
+                <div class="materia">
+                    <h4>C#</h4>
+                    <p>Linguagem da Microsoft, usada em .NET, jogos (Unity) e sistemas web.</p>
+                </div>
+                <div class="materia">
+                    <h4>PHP</h4>
+                    <p>Popular no back-end web, base de sistemas como WordPress.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cursos-especializacao" style="margin-top:40px;">
+            <h3>Cursos por Área de Especialização</h3>
+            <div class="materias-grid">
+                <div class="materia destaque">
+                    <h4>Desenvolvimento Web</h4>
+                    <p>Criação de sites e sistemas para navegadores. Inclui Front-End (HTML, CSS, JS) e Back-End (Node.js, Python, PHP, Java, C#).</p>
+                </div>
+                <div class="materia">
+                    <h4>Desenvolvimento Mobile</h4>
+                    <p>Apps para Android (Kotlin, Java), iOS (Swift) e multiplataforma (React Native, Flutter).</p>
+                </div>
+                <div class="materia">
+                    <h4>Ciência de Dados</h4>
+                    <p>Coleta, análise e visualização de dados. Python com Pandas, NumPy, Scikit-learn.</p>
+                </div>
+                <div class="materia">
+                    <h4>Desenvolvimento de Jogos</h4>
+                    <p>Criação de jogos com Unity (C#) e Unreal Engine (C++).</p>
+                </div>
+            </div>
+        </section>
+            <form id="form-idade" style="display:none;">
+                <label for="idade">Digite sua idade:</label>
+                <input type="number" id="idade" name="idade" min="1" required>
+                <button class="btn" type="submit">Verificar</button>
+            </form>
+            <form id="form-cadastro" style="display:none;">
+                <div id="etapa-curso">
+                    <label for="curso-cadastro">Escolha o curso:</label>
+                    <select id="curso-cadastro" name="curso-cadastro" required>
+                        <option value="">Selecione...</option>
+                        <option value="Inteligência Artificial">Inteligência Artificial (8 semanas)</option>
+                        <option value="Machine Learning">Machine Learning (7 semanas)</option>
+                        <option value="Desenvolvimento de Apps Mobile">Desenvolvimento de Apps Mobile (6 semanas)</option>
+                        <option value="Computação em Nuvem">Computação em Nuvem (5 semanas)</option>
+                        <option value="Cibersegurança">Cibersegurança (6 semanas)</option>
+                    </select>
+                    <button class="btn" type="button" id="btn-avancar-curso">Avançar</button>
+                </div>
+                <div id="etapa-dados" style="display:none;">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="idade-cadastro">Idade:</label>
+                    <input type="number" id="idade-cadastro" name="idade-cadastro" min="1" required>
+                    <button class="btn" type="button" id="btn-avancar-dados">Avançar</button>
+                </div>
+                <div id="etapa-documentos" style="display:none;">
+                    <p>Envie seus documentos (simulação):</p>
+                    <label for="doc-rg">RG:</label>
+                    <input type="file" id="doc-rg" accept="image/*,.pdf">
+                    <label for="doc-cpf">CPF:</label>
+                    <input type="file" id="doc-cpf" accept="image/*,.pdf">
+                    <label for="doc-comprovante">Comprovante de residência:</label>
+                    <input type="file" id="doc-comprovante" accept="image/*,.pdf">
+                    <small>RG, CPF e Comprovante de residência (simulado, não será enviado)</small>
+                    <button class="btn" type="button" id="btn-avancar-docs">Avançar</button>
+                </div>
+                <div id="etapa-confirmacao" style="display:none;">
+                    <h4>Confirme seus dados:</h4>
+                    <div id="resumo-cadastro"></div>
+                    <button class="btn" type="submit">Finalizar Matrícula</button>
+                </div>
+            </form>
+            <div class="output" id="output" aria-live="polite"></div>
+            <section id="alunos-cadastrados" style="display:none; margin-top:30px;">
+                <h3>Alunos Cadastrados</h3>
+                <ul id="lista-alunos"></ul>
+            </section>
+            <section id="materias" style="margin-top:30px;">
+                <h3>Introdução às Matérias</h3>
+                <div class="materias-grid">
+                    <div class="materia destaque">
+                        <h4>Inteligência Artificial <span class="duracao">(8 semanas)</span></h4>
+                        <p>Descubra como as máquinas podem aprender, raciocinar e tomar decisões, revolucionando o mundo digital.</p>
+                    </div>
+                    <div class="materia">
+                        <h4>Machine Learning <span class="duracao">(7 semanas)</span></h4>
+                        <p>Aprenda a criar sistemas que identificam padrões e fazem previsões a partir de grandes volumes de dados.</p>
+                    </div>
+                    <div class="materia">
+                        <h4>Desenvolvimento de Apps Mobile <span class="duracao">(6 semanas)</span></h4>
+                        <p>Crie aplicativos inovadores para smartphones e tablets, do design à publicação nas lojas digitais.</p>
+                    </div>
+                    <div class="materia">
+                        <h4>Computação em Nuvem <span class="duracao">(5 semanas)</span></h4>
+                        <p>Entenda como funcionam os serviços em nuvem, infraestrutura escalável e soluções modernas para empresas.</p>
+                    </div>
+                    <div class="materia">
+                        <h4>Cibersegurança <span class="duracao">(6 semanas)</span></h4>
+                        <p>Proteja sistemas e dados contra ameaças digitais, aprendendo práticas essenciais de segurança da informação.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    </main>
+    <footer>
+        &copy; 2025 Escola Online de Programação. Todos os direitos reservados. Contato: <a href="mailto:contato@escolaonline.com" style="color:#fff;text-decoration:underline;">contato@escolaonline.com</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

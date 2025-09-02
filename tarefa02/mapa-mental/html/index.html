@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Mental - Revisão de Desenvolvimento Web</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark.css">
+    <link rel="icon" href="../img/icon-home.svg" type="image/svg+xml">
+    
+</head>
+<body>
+    <header class="cabecalho-principal">
+        <h1>Mapa Mental Interativo: Revisão Pontual</h1>
+        <p>Navegue pelos tópicos para explorar os conceitos fundamentais do desenvolvimento web.</p>
+    </header>
+
+    <main>
+        <div class="tree" id="mapa-mental-tree">
+            <!-- O mapa mental será gerado aqui pelo JavaScript -->
+        </div>
+    </main>
+
+    <nav class="navegacao-global">
+        <a href="tags-frontend.html">Tags HTML & Frontend</a>
+        <a href="variaveis-tipos.html">Variáveis & Tipos</a>
+        <a href="operadores-condicionais.html">Operadores & Condicionais</a>
+        <a href="repeticao-interacao.html">Repetição & Interação</a>
+    </nav>
+
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema"><span class="icon">🌙</span></button>
+    <script src="../js/theme.js"></script>
+    <script src="../js/mapa-mental.js"></script>
+</body>
+</html>
