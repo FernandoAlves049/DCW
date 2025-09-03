@@ -70,29 +70,114 @@ Este documento detalha o papel e funcionamento de cada arquivo JS presente no pr
 
 ## Principais Tags HTML Utilizadas
 
-O projeto utiliza as tags HTML mais importantes para estruturação, semântica e acessibilidade. Veja as principais:
+O projeto faz uso das principais tags HTML para garantir estrutura, semântica e acessibilidade. Abaixo estão as mais relevantes:
 
-| Tag         | Exemplo                              | Para que serve?                                                                 |
-|-------------|--------------------------------------|---------------------------------------------------------------------------------|
-| `<!DOCTYPE>`| `<!DOCTYPE html>`                    | Define o tipo do documento e ativa o modo padrão do navegador.                   |
-| `<html>`    | `<html lang="pt-br">`               | Raiz do documento; atributo `lang` indica o idioma.                              |
-| `<head>`    | `<head> ... </head>`                  | Metadados, links de CSS, título, charset, etc.                                   |
-| `<meta>`    | `<meta charset="UTF-8">`            | Define metadados como codificação, viewport, etc.                                |
-| `<title>`   | `<title>Minha Página</title>`         | Título exibido na aba do navegador.                                              |
-| `<link>`    | `<link rel="stylesheet" ...>`        | Importa arquivos externos (CSS, favicon).                                        |
-| `<body>`    | `<body> ... </body>`                  | Conteúdo visível da página.                                                      |
-| `<header>`  | `<header> ... </header>`              | Cabeçalho da página ou seção.                                                    |
-| `<main>`    | `<main> ... </main>`                  | Conteúdo principal, único por página.                                            |
-| `<nav>`     | `<nav> ... </nav>`                    | Navegação principal ou secundária.                                               |
-| `<h1>...<h6>`| `<h1>Título</h1>`                    | Títulos e subtítulos, estruturam a hierarquia do conteúdo.                       |
-| `<div>`     | `<div id="conteudo"> ... </div>`     | Container genérico para agrupar elementos.                                       |
-| `<ul>`      | `<ul><li>Item</li></ul>`              | Lista não ordenada.                                                             |
-| `<li>`      | `<li>Item</li>`                       | Item de lista (usado dentro de `<ul>` ou `<ol>`).                                |
-| `<button>`  | `<button>OK</button>`                 | Botão interativo.                                                               |
-| `<a>`       | `<a href="...">Link</a>`             | Link para navegação entre páginas ou sites.                                      |
-| `<script>`  | `<script src="app.js"></script>`     | Importa e executa código JavaScript.                                             |
-| `<pre>`     | `<pre>texto pré-formatado</pre>`       | Exibe texto com espaçamento e quebras preservados (usado para código).           |
-| `<code>`    | `<code>let x = 1;</code>`             | Destaca trechos de código ou comandos.                                           |
+<table>
+  <thead>
+    <tr>
+      <th style="color:#1976d2;">Tag</th>
+      <th style="color:#388e3c;">Exemplo</th>
+      <th style="color:#d32f2f;">Função/Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;!DOCTYPE&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;!DOCTYPE html&gt;</code></td>
+      <td style="color:#d32f2f;">Define o tipo do documento e ativa o modo padrão do navegador.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;html&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;html lang="pt-br"&gt;</code></td>
+      <td style="color:#d32f2f;">Elemento raiz do documento; o atributo <code>lang</code> indica o idioma.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;head&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;head&gt; ... &lt;/head&gt;</code></td>
+      <td style="color:#d32f2f;">Contém metadados, links de CSS, título, charset, etc.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;meta&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;meta charset="UTF-8"&gt;</code></td>
+      <td style="color:#d32f2f;">Define metadados como codificação e viewport.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;title&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;title&gt;Minha Página&lt;/title&gt;</code></td>
+      <td style="color:#d32f2f;">Define o título exibido na aba do navegador.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;link&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;link rel="stylesheet" ...&gt;</code></td>
+      <td style="color:#d32f2f;">Importa arquivos externos, como CSS ou favicon.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;body&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;body&gt; ... &lt;/body&gt;</code></td>
+      <td style="color:#d32f2f;">Contém todo o conteúdo visível da página.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;header&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;header&gt; ... &lt;/header&gt;</code></td>
+      <td style="color:#d32f2f;">Define o cabeçalho da página ou de uma seção.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;main&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;main&gt; ... &lt;/main&gt;</code></td>
+      <td style="color:#d32f2f;">Indica o conteúdo principal da página (deve ser único).</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;nav&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;nav&gt; ... &lt;/nav&gt;</code></td>
+      <td style="color:#d32f2f;">Agrupa links de navegação principais ou secundários.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;h1&gt;</code>–<code style="color:#1976d2;">&lt;h6&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;h1&gt;Título&lt;/h1&gt;</code></td>
+      <td style="color:#d32f2f;">Títulos e subtítulos, estruturando a hierarquia do conteúdo.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;div&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;div id="conteudo"&gt; ... &lt;/div&gt;</code></td>
+      <td style="color:#d32f2f;">Container genérico para agrupar elementos.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;ul&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+      <td style="color:#d32f2f;">Lista não ordenada.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;li&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;li&gt;Item&lt;/li&gt;</code></td>
+      <td style="color:#d32f2f;">Item de lista, usado dentro de <code>&lt;ul&gt;</code> ou <code>&lt;ol&gt;</code>.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;button&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;button&gt;OK&lt;/button&gt;</code></td>
+      <td style="color:#d32f2f;">Botão interativo para ações do usuário.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;a&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;a href="..."&gt;Link&lt;/a&gt;</code></td>
+      <td style="color:#d32f2f;">Cria links para navegação entre páginas ou sites.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;script&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;script src="app.js"&gt;&lt;/script&gt;</code></td>
+      <td style="color:#d32f2f;">Importa e executa código JavaScript externo.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;pre&gt;</code></td>
+      <td><code style="color:#388e3c;">&lt;pre&gt;texto pré-formatado&lt;/pre&gt;</code></td>
+      <td style="color:#d32f2f;">Exibe texto com espaçamento e quebras preservados, útil para exibir códigos.</td>
+    </tr>
+    <tr>
+      <td><code style="color:#1976d2;">&lt;code&gt;</code></td>
+      <td><code style="color:#388e3c;">let x = 1;</code></td>
+      <td style="color:#d32f2f;">Destaca trechos de código ou comandos dentro do texto.</td>
+    </tr>
+  </tbody>
+</table>
 
 Essas tags garantem estrutura semântica, acessibilidade e flexibilidade para estilização e interatividade.
 
