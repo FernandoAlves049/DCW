@@ -1,0 +1,81 @@
+.loops-body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-image: linear-gradient(rgba(247, 250, 252, 0.7), rgba(227, 234, 255, 0.7)), url('../img/(repeticao-interacao.html) – Ciclos.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+}
+h1 {
+    color: #1a2a7a;
+    text-align: center;
+    margin-top: 32px;
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 8px #0001;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 60vh;
+}
+#conteudo-repeticao {
+    margin: 32px 0 0 0;
+    max-width: 820px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px #0001;
+    padding: 24px 28px;
+    border-left: 6px solid #1a2a7a;
+}
+nav {
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+nav a {
+    color: #1a2a7a;
+    text-decoration: none;
+    margin: 0 16px;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+nav a:hover {
+    background: #e3eaff;
+    color: #0a1a4a;
+}
+body { font-size: 16px; line-height: 1.6; }
+h2 { margin: 0 0 10px; font-size: 1.25rem; color: #1a2a7a; }
+ul { padding-left: 1.1rem; margin: 0 0 10px; }
+code {
+    background: #eef0ff;
+    border: 1px solid #e0e4ff;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+pre {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    overflow-x: auto;
+}
+button {
+    background: #1a2a7a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px #0001;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #0a1a4a;
+}

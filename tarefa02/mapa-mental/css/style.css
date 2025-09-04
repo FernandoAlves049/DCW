@@ -1,0 +1,150 @@
+.tree .caret,
+.tree li[title] {
+    position: relative;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+.tree .caret:hover,
+.tree li[title]:hover {
+    color: #00b3ff;
+    text-shadow: 0 0 6px #00b3ff55;
+    background: none;
+    -webkit-text-fill-color: initial;
+    animation: none;
+}
+.home-body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background-image: linear-gradient(rgba(233, 240, 250, 0.7), rgba(247, 250, 253, 0.7)), url('../img/(index.html) – Mapa Mental.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0 0 40px 0;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #2a3a5a;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.3em;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px #0001;
+}
+
+nav {
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+nav a {
+    color: #3a5a8a;
+    text-decoration: none;
+    margin: 0 16px;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+nav a:hover {
+    background: #e3eaf7;
+    color: #1a2a4a;
+}
+
+/* Cabeçalho da home */
+.cabecalho-principal {
+    text-align: center;
+    max-width: 1000px;
+    margin: 20px auto 0;
+    padding: 0 16px;
+}
+.cabecalho-principal p {
+    margin: 8px auto 0;
+    color: #2a3a5a;
+    opacity: 0.9;
+}
+
+/* Árvore do mapa mental */
+.tree {
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #0002;
+    padding: 32px 32px 32px 40px;
+    border-left: 8px solid #3a5a8a;
+}
+.tree ul {
+    list-style: none;
+    margin-left: 1.5em;
+    padding-left: 1.2em;
+    border-left: 2px dashed #b3c6e0;
+}
+.tree li {
+    margin: 0.3em 0;
+    position: relative;
+    font-size: 1.08em;
+    color: #2a3a5a;
+    padding: 2px 0 2px 0.2em;
+    transition: background 0.2s;
+}
+.tree li:hover {
+    background: #f0f6ff;
+    border-radius: 4px;
+}
+.tree .caret {
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #3a5a8a;
+    padding: 2px 6px 2px 0;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+.tree .caret:hover {
+    background: #e3eaf7;
+    color: #1a2a4a;
+}
+.tree .caret::before {
+    content: '\25B6';
+    color: #3a5a8a;
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.2s;
+    font-size: 1.1em;
+}
+.tree .caret-down::before {
+    transform: rotate(90deg);
+}
+.tree .nested {
+    display: none;
+}
+.tree .active {
+    display: block;
+}
+
+/* Folhas (nós finais) */
+.tree li:not(:has(.caret)) {
+    color: #1a2a4a;
+    font-weight: 500;
+    background: #e9f0fa;
+    border-radius: 4px;
+    padding-left: 18px;
+    margin-bottom: 2px;
+}
+
+button {
+    background: #3a5a8a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px #0001;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #1a2a4a;
+}
