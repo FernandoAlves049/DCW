@@ -227,4 +227,94 @@ O projeto faz uso das principais tags HTML para garantir estrutura, semântica e
 
 Essas tags garantem estrutura semântica, acessibilidade e flexibilidade para estilização e interatividade.
 
+---
+
+## Principais Tags JavaScript Utilizadas nos Arquivos do Projeto
+
+> Abaixo estão as principais tags, métodos e estruturas JavaScript presentes nos arquivos do projeto, com explicação de seu papel e funcionamento:
+
+<table>
+  <thead>
+    <tr>
+      <th>Tag/Método/Palavra-chave</th>
+      <th>Função/Descrição</th>
+      <th>Onde aparece</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>const</code>, <code>let</code>, <code>var</code></td>
+      <td>Declaração de variáveis. <code>const</code> para valores fixos, <code>let</code> para escopo local, <code>var</code> (evitado).</td>
+      <td>Todos os arquivos</td>
+    </tr>
+    <tr>
+      <td><code>function</code>, <code>=></code> (Arrow Function)</td>
+      <td>Declara funções tradicionais e modernas (arrow functions).</td>
+      <td>Todos os arquivos</td>
+    </tr>
+    <tr>
+      <td><code>return</code></td>
+      <td>Retorna valores de funções.</td>
+      <td>Todos os arquivos</td>
+    </tr>
+    <tr>
+      <td><code>document.getElementById</code>, <code>document.querySelector</code></td>
+      <td>Seleciona elementos do DOM para manipulação.</td>
+      <td>Todos os arquivos</td>
+    </tr>
+    <tr>
+      <td><code>addEventListener</code></td>
+      <td>Adiciona eventos (ex: clique em botões) para interatividade.</td>
+      <td>Todos os arquivos</td>
+    </tr>
+    <tr>
+      <td><code>innerHTML</code>, <code>textContent</code></td>
+      <td>Insere ou altera conteúdo HTML/texto de elementos.</td>
+      <td>Todos os arquivos</td>
+    </tr>
+    <tr>
+      <td><code>classList.add</code>, <code>classList.remove</code>, <code>classList.toggle</code></td>
+      <td>Manipula classes CSS para alterar aparência ou comportamento.</td>
+      <td>js/theme.js, js/mapa-mental.js</td>
+    </tr>
+    <tr>
+      <td><code>localStorage</code></td>
+      <td>Armazena dados localmente no navegador (ex: tema).</td>
+      <td>js/theme.js</td>
+    </tr>
+    <tr>
+      <td><code>prompt</code>, <code>alert</code>, <code>console.log</code></td>
+      <td>Interage com o usuário e exibe informações no Console.</td>
+      <td>js/operadores-condicionais.js, js/variaveis-tipos.js, js/repeticao-interacao.js</td>
+    </tr>
+    <tr>
+      <td><code>for</code>, <code>forEach</code>, <code>for..of</code>, <code>while</code>, <code>do...while</code></td>
+      <td>Estruturas de repetição para percorrer listas ou executar ações múltiplas vezes.</td>
+      <td>js/repeticao-interacao.js</td>
+    </tr>
+    <tr>
+      <td><code>if</code>, <code>else</code>, <code>switch</code>, <code>? :</code> (operador ternário)</td>
+      <td>Estruturas condicionais para decisões lógicas.</td>
+      <td>js/operadores-condicionais.js, js/variaveis-tipos.js</td>
+    </tr>
+    <tr>
+      <td><code>Object</code>, <code>Array</code>, <code>typeof</code>, <code>Math.random</code></td>
+      <td>Manipulação de objetos, arrays, tipos e geração de números aleatórios.</td>
+      <td>js/variaveis-tipos.js, js/mapa-mental.js</td>
+    </tr>
+    <tr>
+      <td><code>setTimeout</code>, <code>setInterval</code></td>
+      <td>Executa funções após um tempo ou repetidamente (usado em interações).</td>
+      <td>Alguns arquivos</td>
+    </tr>
+    <tr>
+      <td><code>export</code>, <code>import</code></td>
+      <td>(Não utilizado neste projeto, mas comum em JS moderno para módulos).</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+Essas tags e métodos são essenciais para criar interatividade, manipular o DOM, controlar fluxo de execução e garantir uma experiência dinâmica no site.
+
 **Autores:** FERNANDO ALVES DE SOUZA, FELIPE MONTALVÃO
